@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prodo Passport Maker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <img src="img/logo.svg" alt="Prodo logo" class="logo">
+    <div>
+      <p class="eyebrow">Powered by Prodo</p>
+      <h1>Create Your Own Digital Product Passport</h1>
+      <p class="subtitle">Scan, explore, and learn how product data can live inside a modern Digital Product Passport.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel" id="form-section">
+      <div class="section-heading">
+        <p class="step-label">Step 1</p>
+        <div>
+          <h2>Describe your product</h2>
+          <p>Fill in the highlights below and generate a passport preview.</p>
+        </div>
+      </div>
+      <form id="passport-form" novalidate>
+        <div class="form-grid">
+          <label class="form-field">
+            <span>Product name *</span>
+            <input type="text" id="productName" name="productName" required maxlength="80" placeholder="e.g., Genk Battery Pack">
+          </label>
+          <label class="form-field">
+            <span>Category *</span>
+            <select id="category" name="category" required>
+              <option value="">Choose a category</option>
+              <option value="battery">Battery</option>
+              <option value="textile">Textile</option>
+              <option value="furniture">Furniture</option>
+              <option value="electronics">Electronics</option>
+              <option value="metal">Metal Component</option>
+              <option value="toy">Toy</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+          <label class="form-field">
+            <span>Main material *</span>
+            <select id="material" name="material" required>
+              <option value="">Choose a material</option>
+              <option value="steel">Steel</option>
+              <option value="aluminium">Aluminium</option>
+              <option value="plastic">Plastic</option>
+              <option value="textile">Textile</option>
+              <option value="lithium">Lithium-based</option>
+              <option value="mixed">Mixed</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+          <label class="form-field">
+            <span>Country or region of origin *</span>
+            <select id="origin" name="origin" required>
+              <option value="">Select origin</option>
+              <option value="Belgium">Belgium</option>
+              <option value="Germany">Germany</option>
+              <option value="France">France</option>
+              <option value="Netherlands">Netherlands</option>
+              <option value="Spain">Spain</option>
+              <option value="Italy">Italy</option>
+              <option value="Poland">Poland</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="United States">United States</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+          <label class="form-field range-field">
+            <div class="field-label">
+              <span>CO2 footprint estimate (kg CO2e)</span>
+              <span id="co2Value">50</span>
+            </div>
+            <input type="range" id="co2" name="co2" min="0" max="100" step="1" value="50">
+          </label>
+          <label class="form-field range-field">
+            <div class="field-label">
+              <span>Recyclability %</span>
+              <span id="recyclabilityValue">50%</span>
+            </div>
+            <input type="range" id="recyclability" name="recyclability" min="0" max="100" step="1" value="50">
+          </label>
+        </div>
+        <label class="form-field textarea-field">
+          <span>Fun fact</span>
+          <textarea id="funFact" name="funFact" rows="3" maxlength="240" placeholder="Optional: add a surprising material story, a usage tip, or a sustainability stat."></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="button" id="generatePreview" class="primary">Generate Passport Preview</button>
+          <button type="button" id="randomize" class="ghost">Randomize Example</button>
+        </div>
+        <p class="form-hint" id="previewStatus" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="panel" id="preview-section">
+      <div class="section-heading">
+        <p class="step-label">Step 2</p>
+        <div>
+          <h2>See your Product Passport</h2>
+          <p>The preview updates live once generated. Add it to your showcase when you are happy.</p>
+        </div>
+      </div>
+      <div id="preview">
+        <p class="empty-state">No preview yet. Generate one to see the magic.</p>
+      </div>
+      <button type="button" id="savePassport" class="primary" disabled>Save to Showcase Wall</button>
+    </section>
+
+    <section class="panel" id="wall-section">
+      <div class="section-heading">
+        <p class="step-label">Step 3</p>
+        <div>
+          <h2>Your Passport Wall</h2>
+          <p>Everything you save stays on this device. Tap a card to expand details or delete to keep things tidy.</p>
+        </div>
+      </div>
+      <div id="wallEmpty" class="empty-state">No passports yet. Create one above!</div>
+      <div id="wallGrid" class="wall-grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>This is a demo app to illustrate the EU's Digital Product Passport concept. Data is stored only in your browser.</p>
+    <a href="https://prodo.example.com" target="_blank" rel="noopener noreferrer">Learn more about Digital Product Passports</a>
+  </footer>
+
+  <script src="js/qrcode.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
