@@ -1,4 +1,4 @@
-const STORAGE_KEY = 'prodo_passports';
+const STORAGE_KEY = 'vlegel_passports';
 
 const CATEGORY_METADATA = {
   battery: { label: 'Battery', icon: 'B' },

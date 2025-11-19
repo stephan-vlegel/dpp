@@ -1,6 +1,10 @@
-<svg width="130" height="40" viewBox="0 0 130 40" xmlns="http://www.w3.org/2000/svg">
-  <rect width="130" height="40" rx="12" fill="#0f172a"/>
-  <text x="20" y="26" font-family="Outfit, Arial, sans-serif" font-size="18" font-weight="700" fill="#f8fafc">Prodo</text>
-  <circle cx="102" cy="20" r="10" fill="#2563eb" opacity="0.85"/>
-  <circle cx="114" cy="20" r="6" fill="#93c5fd" opacity="0.85"/>
+<svg width="220" height="64" viewBox="0 0 220 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Vlegel Technology</title>
+  <desc id="logoDesc">Twin-triangle mark with Vlegel Technology logotype</desc>
+  <g fill="none" stroke-linejoin="round">
+    <path d="M11 9 80 2 46 58Z" fill="#072c49" stroke="#072c49" stroke-width="2"/>
+    <path d="M27 15 96 11 62 55Z" fill="#00b4d8" stroke="#00b4d8" stroke-width="2"/>
+  </g>
+  <text x="112" y="30" font-family="Outfit, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#0f172a" letter-spacing="0.08em">VLEGEL</text>
+  <text x="112" y="48" font-family="Outfit, 'Segoe UI', sans-serif" font-size="18" font-weight="500" fill="#0f172a" letter-spacing="0.08em">TECHNOLOGY</text>
 </svg>

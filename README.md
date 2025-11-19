@@ -1,4 +1,4 @@
-# Prodo Passport Maker
+# Vlegel Technology Passport Maker
 
 A tiny, conference-friendly Digital Product Passport playground. Visitors can craft a quick passport, preview it as a branded card (complete with QR code), and pin it to a local showcase wall that persists via `localStorage`.
 
@@ -13,7 +13,7 @@ A tiny, conference-friendly Digital Product Passport playground. Visitors can cr
 ## Get Started Locally
 
 ```bash
-cd prodo-passport-maker
+cd vlegel-technology-passport-maker
 # open the index.html file directly, or serve statically:
 python -m http.server 4173
 ```

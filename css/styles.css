@@ -3,8 +3,8 @@
   --panel: #ffffff;
   --ink: #0f172a;
   --muted: #4b5563;
-  --accent: #2563eb;
-  --accent-soft: #dbeafe;
+  --accent: #00b4d8;
+  --accent-soft: #c9f3ff;
   --border: #e2e8f0;
   --success: #059669;
   --danger: #dc2626;
@@ -22,7 +22,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: radial-gradient(circle at top right, #e0f2fe 0%, #f7f9fc 45%, #f8fafc 100%);
+  background: radial-gradient(circle at top right, #c9f3ff 0%, #eef9ff 45%, #f8fafc 100%);
   min-height: 100vh;
   line-height: 1.6;
 }
@@ -38,7 +38,7 @@ body {
 }
 
 .logo {
-  width: 92px;
+  width: 150px;
   height: auto;
 }
 
