@@ -26,7 +26,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, --secondary-blue 0%, --secondary-green 100%);
+  background: linear-gradient(135deg, #136974 0%, #5caa7e 100%);
   min-height: 100vh;
   line-height: 1.6;
 }
