@@ -26,9 +26,21 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #263680 0%, #279b43 100%);
+  background: linear-gradient(135deg, --secondary-blue 0%, --secondary-green 100%);
   min-height: 100vh;
   line-height: 1.6;
+}
+
+#newsletter-section .form-embed {
+  margin-top: 1.5rem;
+}
+
+#newsletter-section iframe {
+  width: 100%;
+  max-width: 800px; /* to do: set if needed */
+  height: 500px;
+  display: block;
+  margin: 0 auto;
 }
 
 .site-header {
